@@ -1,0 +1,52 @@
+div {
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.somebackground {
+ background-color: lightgray;
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 30px;
+ padding: 30px;
+}
+
+.somebackground h3 {
+    text-align: center;
+}
+
+div .inner {
+    background-color: #d2d2dd;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+form input {
+    width: 30%;
+}
+
+.question {
+    background-color: white;
+    width: 90%;
+    border: 5px solid black; 
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}

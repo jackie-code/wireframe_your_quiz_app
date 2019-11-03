@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GMO Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <div>
+            <h1>Do you really know about GMO's?</h1>    
+            <!-- This will incrament the current score and question -->
+            <div class="question-and-score"></div>
+          </div>
+        </div>
+    </header>
+
+    <main class="container">
+            
+
+        <!-- The outer div will add some type of background image for decoration purposes later -->
+        <div class="somebackground">
+                <h3>See how much you really know...</h3>
+                <!-- a list of questions will be pulled from a JS file later and put inside this p element-->
+                <p class="question">Questions will appear here</p>
+
+            <!-- This inner div will hold the form of questions and hold interesting images for yes and no answers -->
+            <div class="inner">
+                
+                    <form>
+                        <div class="yes"> 
+                            <label for="yes"><img src="quiz_app_images/gmo-apple-syringe-wooden-table-1068x713.jpg" height='150' width='190' alt="has gmo"><br>YES</label><hr>
+                            <input type='radio' id="yes" name="answer" value="yes">
+                        </div>
+                        <br>
+                        <div class="no">
+                            <label for="no"><img src="quiz_app_images/nogmo.jpg" height='150' width='190' alt="no gmo"><br> NO</label><hr>
+                            <input type='radio' id="no" name="answerno" value="no">
+                        </div>
+                        <br>
+                        <button type="submit">Submit answer</button>
+                    </form>
+
+            </div>
+
+            <!-- this p element will give an explanation for each answer -->
+            <p class="explanation">This is a placeholder for the explanation of each question</p>
+        </div>
+
+
+    </main>
+
+<footer>
+
+</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
