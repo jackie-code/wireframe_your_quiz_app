@@ -1,3 +1,6 @@
+
+
+/* when a user clicks on start quiz button */
 function startQuiz() {
     $('#start').on('click', function(event){
       renderAQuestion();
@@ -6,11 +9,20 @@ function startQuiz() {
   }
 
 /* Displays question number and score obtained */
-function updateQuestionAndScore() {
-    const html = $(`<ul>
-        <li id="js-answered">Questions Number: ${STORE.currentQuestion + 1}/${STORE.questions.length}</li>
-        <li id="js-score">Score: ${STORE.score}/${STORE.questions.length}</li>
-      </ul>`);
-    $(".question-and-score").html(html);
-  }
 
+
+  /* Displays the options for the current question */
+  
+      
+
+  /*displays the question*/
+
+  
+
+  /* displays results and restart quiz button */
+
+
+  /* checks whether it reached the end of questions list */
+
+
+  /*checks whether the chosen option is right or wrong and displays respective message*/ 

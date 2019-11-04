@@ -50,3 +50,11 @@ footer {
     height: 100px;
     background-color: black;
 }
+
+.hidden {
+    display: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
