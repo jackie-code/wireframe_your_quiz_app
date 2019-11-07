@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>GMO Quiz</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-        <div>
-            <h1>Do you really know about GMO's?</h1>    
-            <!-- This will incrament the current score and question -->
-            <div class="question-and-score"></div>
-          </div>
-        </div>
-    </header>
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>GMO Quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="heading">
+			<h1>Do you really know about GMO's?</h1>
+		</div>
+		</div>
+  </header>
+  <section class="liScore">
+	<ul>
+		<li class="sizeMe">Question:
+			<span class="questionNumber">0</span>/10</li>
+          <li class="sizeMe">Score:
+            <span class="score">0</span>
+          </li>
+        </ul>
+    </section>
     <main class="container">
 
 
-        
+      <!-- .js-start-page here -->
+        <div class="js-start-page elementToFadeInAndOut">
+                
+                    <h1>Welcome to the GMO Quiz App!</h1>
+                    <div class="inner">
+                        <h2>Press start to test your knowledge</h2>
+                        <button type="button" id="start">Start the quiz!</button>
+                    
+                </div>
+        </div>
+  <!-- .js-start-page end -->
 
 
 
+<!-- quiz stuff -->
+<div class="somebackground elementToFadeInAndOut">
 
-
-        <!-- The outer div will add some type of background image for decoration purposes later -->
-        <div class="somebackground">
-                <button type="button" id="start">Start</button>
-                <!-- a list of questions will be pulled from a JS file later and put inside this p element-->
-                <p class="question">Questions will appear here</p>
-
-            <!-- This inner div will hold the form of questions and hold interesting images for yes and no answers -->
+                <p class="question"></p>
+            
             <div class="inner">
                 
-                    <form>
+                    <form id="myForm">
                         <div class="yes"> 
                             <label for="yes"><img src="quiz_app_images/gmo-apple-syringe-wooden-table-1068x713.jpg" height='150' width='190' alt="has gmo"><br>YES</label><hr>
                             <input type='radio' id="yes" name="answer" value="yes">
@@ -42,18 +58,34 @@
                         <br>
                         <div class="no">
                             <label for="no"><img src="quiz_app_images/nogmo.jpg" height='150' width='190' alt="no gmo"><br> NO</label><hr>
-                            <input type='radio' id="no" name="answerno" value="no">
+                            <input type='radio' id="no" name="answer" value="no">
                         </div>
                         <br>
-                        <button type="submit">Submit answer</button>
+                        <button class="submit" type="submit">Submit answer</button>
                     </form>
 
             </div>
 
             <!-- this p element will give an explanation for each answer -->
-            <p class="explanation">This is a placeholder for the explanation of each question</p>
+            <p class="explanation elementToFadeInAndOut">This is a placeholder for the explanation of each question</p>
+            <button class="next">NEXT</button>
+
+             <!-- finished quiz good -->
+        <div class='finished elementToFadeInAndOut'>
+          <p>Finished the quiz!! You're score is higher than 7! You know a lot!</p>
+          <button class="retake">Retake Quiz</button>
+          <iframe src="https://giphy.com/embed/4GRRBtKrdiFDa" width="480" height="370" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/weed-thumbs-up-love-4GRRBtKrdiFDa">via GIPHY</a></p>
         </div>
 
+        <!-- finished quiz needs work -->
+        <div class='finishedBad elementToFadeInAndOut'>
+          <p>Finished the quiz!! You're score is less than 7. You're not exactly an expert</p>
+          <button class="retake">Retake Quiz</button>
+        </div>
+        </div>
+<!-- quiz stuff end -->
+
+       
 
     </main>
 
@@ -62,6 +94,6 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="store.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

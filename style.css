@@ -1,25 +1,32 @@
-div {
-    border: 1px solid black;
+html {
+    background-image: url(http://www.bioethics.com/wp-content/uploads/2014/03/genetic-ethics1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 header {
     text-align: center;
     background-color: rgb(236, 236, 236);
+    
 }
 
 .container {
     display: flex;
     justify-content: center;
+    
 }
 
 .somebackground {
- background-color: lightgray;
+ background-image: url('https://scx1.b-cdn.net/csz/news/800/2019/1-nature.jpg');
+ background-repeat: no-repeat;
+ background-size: 100%;
  width: 70%;
  display: flex;
  flex-direction: column;
  align-items: center;
- margin: 30px;
+ 
  padding: 30px;
+ 
 }
 
 .somebackground h3 {
@@ -27,13 +34,16 @@ header {
 }
 
 div .inner {
-    background-color: #d2d2dd;
     width: 40%;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 30px;
 }
+
+
+
+
 
 form input {
     width: 30%;
@@ -43,12 +53,16 @@ form input {
     background-color: white;
     width: 90%;
     border: 5px solid black; 
+    text-align: center;
 }
 
 footer {
     width: 100%;
     height: 100px;
     background-color: black;
+    bottom: 0;
+    position: fixed;
+    left: 0;
 }
 
 .hidden {
@@ -57,4 +71,76 @@ footer {
 
 .line-through {
     text-decoration: line-through;
+}
+
+h1 {
+    font-family: 'Yeon Sung', cursive;
+}
+
+.finished {
+  
+    text-align: center;
+}
+
+
+
+.retake {
+display: flex;
+justify-content: flex-end;
+margin-left: 37%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.next {
+    margin-top: 10%;
+}
+
+.heading {
+    background-color: white;
+}
+
+
+
+.liScore {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.explanation {
+    font-size: 2em;
+    background-color: white;
+    border-radius: 30%;
+    box-shadow: 0 0 10px 10px white;  
+}
+
+
+
+
+
+
+.fade{
+    width:200px;
+    height: 200px;
+    background: red;
+    opacity:0;
+}
+
+.elementToFadeInAndOut {
+    animation: fadeInOut 4s linear forwards;
+}
+
+@keyframes fadeInOut {
+ 0% { opacity:0; }
+ 50% { opacity:1; } 
+  
 }
