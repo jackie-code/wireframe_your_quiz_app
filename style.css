@@ -4,10 +4,39 @@ html {
     background-size: cover; 
 }
 
+h2 {
+    color: white;
+}
+
+.sTitle {
+    font-size: 2.5em;
+}
+
+.js-start-page {
+    display: flex;
+    text-shadow: 2px 2px white;
+}
+
+#start {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: 5px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start:hover {
+    box-shadow: 0 0 50px 10px white; 
+}
+
 header {
     text-align: center;
-    background-color: rgb(236, 236, 236);
-    
+}
+
+.heading {
+    background-color: black;
+    color: white;
 }
 
 .container {
@@ -17,14 +46,15 @@ header {
 }
 
 .somebackground {
- background-image: url('https://scx1.b-cdn.net/csz/news/800/2019/1-nature.jpg');
+ background-color: rgba(14, 151, 117, .5);
  background-repeat: no-repeat;
  background-size: 100%;
  width: 70%;
  display: flex;
  flex-direction: column;
  align-items: center;
- 
+ border: 5px rgb(194, 1, 1) solid;
+ border-radius: 70%;
  padding: 30px;
  
 }
@@ -39,21 +69,37 @@ div .inner {
     justify-content: center;
     text-align: center;
     padding: 30px;
+    
 }
 
+label {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
 
-
-
+input:hover {
+    background-color: red;
+    border-radius: 70%;
+}
 
 form input {
     width: 30%;
 }
 
 .question {
-    background-color: white;
+    background-color: black;
+    color: white;
     width: 90%;
     border: 5px solid black; 
+    border-radius: 70%;
     text-align: center;
+    font-weight;: bold;
+    font-size: 15px;
+}
+
+.question:hover {
+    box-shadow: 0 0 50px 10px white; 
 }
 
 footer {
@@ -82,7 +128,17 @@ h1 {
     text-align: center;
 }
 
+.submit {
+    background-color: black;
+    color: white;
+    border-radius: 70%;
+    border: 5px solid rgb(194, 1, 1);
+    padding: 10px;
+}
 
+.submit:hover {
+    box-shadow: 0 0 50px 10px rgb(4, 212, 4); 
+}
 
 .retake {
 display: flex;
@@ -96,17 +152,18 @@ ul {
 
 li {
     font-family: 'Bowlby One SC', cursive;
+
 }
 
 .next {
     margin-top: 10%;
 }
 
-.heading {
-    background-color: white;
+
+
+.pic:hover {
+    box-shadow: 0 0 50px 10px white; 
 }
-
-
 
 .liScore {
     display: flex;
@@ -114,7 +171,11 @@ li {
     margin-right: auto;
     margin-top: 0;
     justify-content: center;
+    text-shadow: 2px 2px white;
+    font-size: 15px;
+
 }
+
 
 .explanation {
     font-size: 2em;
